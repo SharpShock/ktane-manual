@@ -1,7 +1,7 @@
 def main():
-    serial = "AB3KF48D"
+    serial = ""
     serial = list(serial)
-    wires("blue", "blue", "black", "none", "none", "none")
+    wires("none", "none", "none", "none", "none", "none")
 
 # Definir função do butão
 def button(color,text,label,batteries):
