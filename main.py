@@ -1,10 +1,10 @@
 def main():
-    serial = ""
+    serial = "AB3KF48D"
     serial = list(serial)
-    wires("none", "none", "none", "none", "none", "none")
+    
 
 # Definir função do butão
-def button(color,text,label,batteries):
+def button(color, text, label, batteries):
     if (color == "blue" and text == "abort"):
         strip = input("Hold. What is the strip colored? (red, other...)  > ")
         if strip == "blue":
@@ -22,13 +22,13 @@ def button(color,text,label,batteries):
     elif color == "white" and label == "car":
         strip = input("Hold. What is the strip colored? (red, other...)  > ")
         if strip == "blue":
-            print("Release when the countdown timer has a 4 in any position.")
+            print("--- RELEASE WHEN THE COUNTDOWN TIMER HAS 4 IN ANY POSITION. ---")
         elif strip == "white":
-            print("Release when the countdown timer has a 1 in any position.")
+            print("--- RELEASE WHEN THE COUNTDOWN TIMER HAS 1 IN ANY POSITION. ---")
         elif strip == "yellow":
-            print("Release when the countdown timer has a 5 in any position.")
+            print("--- RELEASE WHEN THE COUNTDOWN TIMER HAS 5 IN ANY POSITION. ---")
         elif strip == "other":
-            print("Release when the countdown timer has a 1 in any position.")
+            print("--- RELEASE WHEN THE COUNTDOWN TIMER HAS 1 IN ANY POSITION. ---")
     
     elif batteries > 2 and label == "frk":
         print("Press and immediately release the button.")
